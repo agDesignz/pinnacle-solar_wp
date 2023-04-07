@@ -1,0 +1,72 @@
+@use "../abstracts/variables"as v;
+@use "../abstracts/mixins"as m;
+
+.why-intro {
+  @include m.padVertLg;
+
+  & h2 {
+    text-align: center;
+  }
+}
+
+.why-save {
+  background: linear-gradient(0deg, rgba(v.$color-white,1) 0%, rgba(v.$color-secondary-5,1) 51%, rgba(v.$color-white,1) 100%);
+}
+
+.why-perks {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__filter {
+  background: linear-gradient(0deg, rgba(v.$color-white,1) 0%, rgba(v.$color-white,.7) 51%, rgba(v.$color-white,1) 100%);
+  }
+
+  &__container {
+
+  }
+
+
+  &__box {
+    padding: 4%;
+    background-color: rgba(v.$color-secondary-6, .75);
+    border-radius: .5rem;
+    box-shadow: v.$shadow-light;
+
+    &--value {
+      grid-column: 1 / span 8;
+      grid-row: 1 / span 1;
+    }
+
+    &--incentives {
+      grid-column: 5 / span 8;
+      grid-row: 2 / span 1;
+    }
+
+    &--batteries {
+      grid-column: 2 / span 8;
+      grid-row: 3 / span 1;
+    }
+
+    @include m.respond(bp-sm) {
+      grid-column: 1 / -1;
+    }
+  }
+}
+
+.why-protect {
+  padding-top: 0;
+}
+
+.why-options {
+  background-size: cover;
+  background-position: center;
+
+  &__filter {
+        background-image: v.$filter-grey;
+  }
+
+  &__heading {
+    margin-bottom: 2rem;
+  }
+}

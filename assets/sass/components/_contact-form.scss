@@ -1,0 +1,81 @@
+@use "../abstracts/variables"as v;
+
+.contact-form {
+  &__group {
+    margin-bottom: 1.5rem;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 1rem 0;
+    background-color: rgba(v.$color-grey-dark, .6);
+    border: 2px solid rgba(v.$color-grey-medium, .5);
+    border-radius: 4px;
+    color: v.$color-white;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    outline: none;
+    transition: border-color 0.2s;
+    box-shadow: rgba(v.$color-grey-medium, 0.6) 0px 4px 24px;
+    padding: 1rem;
+
+    &::placeholder {
+      color: v.$color-grey-light;
+    }
+
+    &:focus {
+      border: 2px solid rgba(v.$color-grey-light, .6);
+      background-color: rgba(v.$color-grey-dark, .85);
+    }
+  }
+
+  &__buttons {
+    display: flex;
+
+    &--left {
+      justify-content: start;
+    }
+
+    &--center {
+      justify-content: center;
+    }
+
+    &--right {
+      justify-content: flex-end;
+    }
+
+  }
+
+  &__button {
+    font-size: 1.4rem;
+    cursor: pointer;
+    outline: none;
+    background: rgba(v.$color-grey-dark, .6);
+  }
+
+  &--dark {
+
+    & .contact-form {
+
+      &__input {
+        background-color: rgba(v.$color-grey-light, .2);
+        border: 2px solid rgba(v.$color-grey-medium, .5);
+        color: v.$color-grey-dark;
+        box-shadow: rgba(v.$color-grey-medium, 0.4) 0px 4px 10px;
+
+        &::placeholder {
+          color: v.$color-grey-medium;
+        }
+
+        &:focus {
+          border-color: v.$color-grey-medium;
+          background-color: rgba(v.$color-grey-light, .0);
+        }
+      }
+
+      &__button {
+        background-color: v.$color-white;
+      }
+    }
+  }
+}

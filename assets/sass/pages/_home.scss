@@ -1,0 +1,215 @@
+@use "../abstracts/variables"as v;
+@use "../abstracts/mixins"as m;
+
+.home-hero {
+  height: 100vh;
+  padding: 20rem 0;
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+  row-gap: 2rem;
+  background-image: v.$hero-gradient;
+
+  &__title {
+    align-self: end;
+    text-shadow: 0 0.5rem 1rem rgba(v.$color-secondary-light, .3);
+    grid-column: center-start / center-end;
+
+    @include m.respond(bp-md) {
+      text-align: center;
+    }
+  }
+
+  &__tagline {
+    text-shadow: 0 0.5rem 1rem rgba(v.$color-secondary-light, .3);
+    grid-column: center-start / center-end;
+
+    @include m.respond(bp-md) {
+      text-align: center;
+    }
+  }
+
+  &__btn {
+    margin-top: 5rem;
+    grid-column: center-start / center-end;
+    justify-self: start;
+
+    @include m.respond(bp-md) {
+      justify-self: center;
+    }
+  }
+}
+
+.home-intro {
+  @include m.padVertLg;
+
+  &__content {
+    row-gap: v.$row-gap-md;
+  }
+
+  &__subheading {
+    margin-bottom: 2rem;
+  }
+
+  &__subheading {
+    padding-bottom: 1rem;
+    border-bottom: 2px solid v.$color-primary-light;
+    display: inline-block;
+    justify-self: start;
+  }
+
+  &__btn {
+    justify-self: start;
+
+    @include m.respond(bp-md) {
+      justify-self: center;
+    }
+  }
+
+  &__stack {
+    display: grid;
+    align-items: end;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: right top;
+
+    @include m.respond(bp-md) {
+      background-image: none;
+    }
+  }
+
+  &__fig {
+    align-self: end;
+  }
+}
+
+.home-options {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &__cover {
+    background-image: linear-gradient(rgba(v.$color-primary-3, .85), rgba(v.$color-primary-3, .85));
+    grid-column: v.$fullGrid;
+  }
+
+
+  grid-column: v.$fullGrid;
+
+  &__container {
+    grid-column: v.$centralGrid;
+    @include m.padVertLg;
+
+    @include m.respond(bp-lg) {
+      grid-column: v.$fullGrid;
+    }
+
+    @include m.respond(bp-md) {
+      grid-column: v.$centralGrid;
+      @include m.stackEm;
+    }
+  }
+
+  &__heading {
+    padding: 2rem;
+  }
+
+  &__subheading {
+    padding: 0 2rem;
+
+    &--bottom {
+      align-self: end;
+    }
+  }
+
+  &__btn {
+    grid-column: 1 / -1;
+    justify-self: center;
+    padding: 0 2rem;
+  }
+}
+
+.features {
+  &__list {
+    background-color: rgba(v.$color-grey-dark, .7);
+    display: grid;
+    row-gap: 2rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 2.4vw 0;
+  }
+
+  &__title {
+    font-size: 4rem;
+    line-height: 1;
+  }
+
+  &__item {
+    padding: 1.6rem 0;
+    font-size: 2rem;
+
+    &--accent {
+      padding: 0;
+      font-size: 2.5rem;
+      color: v.$color-secondary-dark;
+    }
+
+    &:not(:last-child) {
+      border-bottom: 2px solid v.$color-secondary-light;
+    }
+  }
+}
+
+.home-info {
+  @include m.padVertLg;
+  grid-template-rows: min-content min-content;
+  row-gap: v.$row-gap-lg;
+  background-color: v.$color-primary-8;
+
+  @include m.respond(bp-md) {
+    @include m.padVertLg;
+  }
+
+  &__heading {
+    text-align: center;
+  }
+
+}
+
+.benefits {
+  @include m.padVertLg;
+
+  &__container {
+    column-gap: v.$col-gap-lg;
+    row-gap: v.$row-gap-lg;
+  }
+}
+
+.home-cta {
+
+
+  background-size: cover;
+  background-position: center;
+
+  &__cover {
+      background-image: linear-gradient(to top right, rgba(v.$color-grey-dark, .85), rgba(v.$color-black-light, .8));
+        @include m.padVertLg;
+  }
+
+  &__heading {
+    font-size: 6rem;
+    font-weight: 800;
+    line-height: 1.1;
+    justify-self: center;
+  }
+
+  &__subheading {
+    font-weight: 500;
+    padding-bottom: 1.5rem;
+  }
+
+  & .contact-form__button {
+    border: 1px solid #ffffff;
+    color: #ffffff;
+  }
+
+}
