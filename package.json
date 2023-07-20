@@ -7,7 +7,7 @@
     "watch:sass": "sass --watch assets/sass/main.scss assets/css/style.css",
     "devserver": "live-server",
     "start": "wp-scripts start",
-    "compile:sass": "sass sass/style.scss css/style.comp.css",
+    "compile:sass": "sass assets/sass/main.scss css/style.comp.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
     "compress:css": "sass css/style.prefix.css assets/css/style.css --style=compressed",
     "build:css": "npm-run-all compile:sass prefix:css compress:css"

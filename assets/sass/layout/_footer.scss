@@ -7,81 +7,62 @@
   display: grid;
   padding-top: 4%;
   padding-bottom: 2%;
-
   @include m.respond(bp-md) {
-    min-height: 100vh;
-    align-content: center;
+    padding: 10% 0;
   }
 
   &__container {
     grid-column: center-start / center-end;
     color: v.$color-white;
-    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    justify-items: center;
 
+    column-gap: 5rem;
+    align-content: baseline;
     @include m.respond(bp-md) {
-      grid-template-columns: repeat(2, 1fr);
-    justify-self: center;
+      grid-template-columns: 1fr;
+      // justify-self: center;
     }
+  }
+
+  &__box {
+    display: grid;
+    row-gap: 1rem;
+
+    &--address {
+      & i {
+        font-size: 2rem;
+        margin-right: 1rem;
+      }
+    }
+
+      justify-content: center;
+      justify-items: center;
   }
 
   &__logo-img {
-    max-height: 10rem;
-
-    @include m.respond(bp-sm) {
-      height: 15vw;
-    }
+    max-width: 30rem;
   }
 
-  &__name {
-    font-size: 2.5rem;
-  }
-
-  &__address {
-    & span {
-      display: block;
-    }
-  }
-
-  &__email {
-
+  & a {
     &,
     &:link,
     &:visited {
       color: v.$color-white;
-      font-size: 1.5rem;
+      text-decoration: none;
+      font-size: 1.8rem;
       transition: all 0.2s;
       display: inline-block;
     }
 
     &:hover {
       color: v.$color-grey-light;
-      transform: translateY(-2px);
-    }
-  }
-
-  &__cta {
-    grid-template-rows: min-content 1fr;
-    justify-items: end;
-
-    @include m.respond(bp-md) {
-      grid-column: 1 / -1;
-      justify-items: center;
-      row-gap: v.$row-gap-md;
-    }
-
-    h3 {
-      text-align: right;
-
-      @include m.respond(bp-md) {
-        text-align: center;
-      }
     }
   }
 
   &__btn {
-    // justify-self: end;
-    align-self: end;
-
+    margin: 1rem 0;
     @include m.respond(bp-md) {
       justify-self: center;
     }
@@ -92,5 +73,4 @@
     margin-top: 5rem;
     justify-self: center;
   }
-
 }

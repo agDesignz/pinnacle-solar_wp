@@ -13,7 +13,6 @@
     align-self: end;
     text-shadow: 0 0.5rem 1rem rgba(v.$color-secondary-light, .3);
     grid-column: center-start / center-end;
-
     @include m.respond(bp-md) {
       text-align: center;
     }
@@ -22,7 +21,6 @@
   &__tagline {
     text-shadow: 0 0.5rem 1rem rgba(v.$color-secondary-light, .3);
     grid-column: center-start / center-end;
-
     @include m.respond(bp-md) {
       text-align: center;
     }
@@ -32,7 +30,6 @@
     margin-top: 5rem;
     grid-column: center-start / center-end;
     justify-self: start;
-
     @include m.respond(bp-md) {
       justify-self: center;
     }
@@ -59,7 +56,6 @@
 
   &__btn {
     justify-self: start;
-
     @include m.respond(bp-md) {
       justify-self: center;
     }
@@ -71,7 +67,6 @@
     background-repeat: no-repeat;
     background-size: 70%;
     background-position: right top;
-
     @include m.respond(bp-md) {
       background-image: none;
     }
@@ -91,17 +86,11 @@
     background-image: linear-gradient(rgba(v.$color-primary-3, .85), rgba(v.$color-primary-3, .85));
     grid-column: v.$fullGrid;
   }
-
-
   grid-column: v.$fullGrid;
 
   &__container {
     grid-column: v.$centralGrid;
     @include m.padVertLg;
-
-    @include m.respond(bp-lg) {
-      grid-column: v.$fullGrid;
-    }
 
     @include m.respond(bp-md) {
       grid-column: v.$centralGrid;
@@ -128,43 +117,11 @@
   }
 }
 
-.features {
-  &__list {
-    background-color: rgba(v.$color-grey-dark, .7);
-    display: grid;
-    row-gap: 2rem;
-    padding: 2rem;
-    border-radius: 1rem;
-    margin-bottom: 2.4vw 0;
-  }
-
-  &__title {
-    font-size: 4rem;
-    line-height: 1;
-  }
-
-  &__item {
-    padding: 1.6rem 0;
-    font-size: 2rem;
-
-    &--accent {
-      padding: 0;
-      font-size: 2.5rem;
-      color: v.$color-secondary-dark;
-    }
-
-    &:not(:last-child) {
-      border-bottom: 2px solid v.$color-secondary-light;
-    }
-  }
-}
-
 .home-info {
   @include m.padVertLg;
   grid-template-rows: min-content min-content;
   row-gap: v.$row-gap-lg;
   background-color: v.$color-primary-8;
-
   @include m.respond(bp-md) {
     @include m.padVertLg;
   }
@@ -172,7 +129,6 @@
   &__heading {
     text-align: center;
   }
-
 }
 
 .benefits {
@@ -182,17 +138,21 @@
     column-gap: v.$col-gap-lg;
     row-gap: v.$row-gap-lg;
   }
+
+  &__figure {
+    @include m.respond(bp-md) {
+      display: none;
+    }
+  }
 }
 
 .home-cta {
-
-
   background-size: cover;
   background-position: center;
 
   &__cover {
-      background-image: linear-gradient(to top right, rgba(v.$color-grey-dark, .85), rgba(v.$color-black-light, .8));
-        @include m.padVertLg;
+    background-image: linear-gradient(to top right, rgba(v.$color-grey-dark, .85), rgba(v.$color-black-light, .8));
+    @include m.padVertLg;
   }
 
   &__heading {
@@ -211,5 +171,4 @@
     border: 1px solid #ffffff;
     color: #ffffff;
   }
-
 }

@@ -10,7 +10,7 @@
     wp_head();
   ?>
 
-  </script>
+  <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
 
   <title>Pinnacle Solar</title>
 </head>
@@ -20,7 +20,7 @@
 <header class="header">
 <div class="header__top">
   <div class="header__branding">
-    <a href="#" class="header__home-link">
+    <a href="<?php echo site_url(); ?>" class="header__home-link">
       <img class="header__logo" src="<?php echo get_theme_file_uri('/assets/images/logo-new.png') ?>" alt="Pinnacle Solar Logo">
     </a>
   </div>

@@ -18,7 +18,7 @@
 
           <div class="description__content content--span-6 content--md-full content--grid content--80">
             <h2 class="description__heading heading-2">Our Company</h2>
-            <p>Pinnacle Solar is western Massachusetts' first stop for solar energy solutions. We are a customer-centered company leveraging our experience in the energy sector to help get consumers get the best results to meet their energy needs, as well as the best ROI and lessen their impact on the environment.</p>
+            <p>Pinnacle Solar is western Massachusetts' first stop for solar energy solutions. We are a customer-centered company leveraging our experience in the energy sector to help get our customers the best results to meet their energy needs, as well as the best ROI, and lessen their impact on the environment.</p>
           </div>
 
           <figure class="description__fig grid__fig content--span-6 content--md-full content--grid">
@@ -50,13 +50,13 @@
           <div class="services__item content--span-3 content--md-6 content--sm-full content--grid">
             <img src="<?php echo get_theme_file_uri('/assets/images/logo-mini.png') ?>" alt="Rays from pinnacle logo" class="services__rays-img">
             <h3 class="services__subheading">Personalized Service</h3>
-            <p class="services__text">We work with each you individually to help you find the energy solution that's right for you.</p>
+            <p class="services__text">We work with each customer individually to help you find the energy solution that's right for you.</p>
           </div>
 
           <div class="services__item content--span-3 content--md-6 content--sm-full content--grid">
             <img src="<?php echo get_theme_file_uri('/assets/images/logo-mini.png') ?>" alt="Rays from pinnacle logo" class="services__rays-img">
             <h3 class="services__subheading">Peace of Mind</h3>
-            <p class="services__text">Our team is commited to helping you find your way to address your needs with confidence and security.</p>
+            <p class="services__text">Our team is commited to helping you find the best way to address your needs with confidence and security.</p>
           </div>
 
           <div class="services__item content--span-3 content--md-6 content--sm-full content--grid">
@@ -68,7 +68,7 @@
           <div class="services__item content--span-3 content--md-6 content--sm-full content--grid">
             <img src="<?php echo get_theme_file_uri('/assets/images/logo-mini.png') ?>" alt="Rays from pinnacle logo" class="services__rays-img">
             <h3 class="services__subheading">Help you save</h3>
-            <p class="services__text">We know you work hard for your money. We work hard to make sure you keep it. That's the Pinnacle Promise!</p>
+            <p class="services__text">We know you work hard for your money. We work hard to make sure you keep it.</p>
           </div>
 
         </div>
@@ -78,13 +78,13 @@
     <section class="about-cta container--central grid">
       <div class="content--grid content--center-80 content--md-80">
 
-              <h2 class="about-cta__heading heading-2 content--full">Rready for your no-cost assessment?</h2>
+              <h2 class="about-cta__heading heading-2 content--full">Ready for your no-cost assessment?</h2>
               <div class="u-flex">
                 <p>Getting Solar can be a simple process when you're in the right hands. Contact us and let us help you get started.</p>
               </div>
 
               <div class="u-flex--center">
-                <a href="#" class="btn btn--gold">
+                <a href="<?php echo site_url('/contact'); ?>" class="btn btn--gold">
                   <span class="btn__link">Get a quote</span>
                 </a>
               </div>

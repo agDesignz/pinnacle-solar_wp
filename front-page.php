@@ -8,7 +8,7 @@
 <div class="home-hero grid--full">
   <h1 class="home-hero__title heading-1 heading-1 text-light">A partnership with the sun</h1>
   <h2 class="home-hero__tagline heading-2 text-light hero-subheading">Take control of your energy today!</h2>
-  <a href="#" class="btn btn--gold btn--dark-bg home-hero__btn">
+  <a href="<?php echo site_url('/contact'); ?>" class="btn btn--gold btn--dark-bg home-hero__btn">
     <span class="btn__link">Get a quote</span>
   </a>
 </div>
@@ -23,19 +23,17 @@
         <div class="home-intro__block">
           <h3 class="home-intro__subheading heading-3 ">Who we are</h2>
             <p>
-              We are a small business in the beautiful Berkshire mountains of western Massachussetts committed to
-              helping our customers with their solar needs and all that jazz.
+              We are a solar consulting company located in the beautiful Berkshire Mountains of western Massachusetts. We are committed to helping home and business owners throughout New England make the transition to solar energy, combining the greatest savings with the highest quality installations.
             </p>
         </div>
         <div class="home-intro__block">
           <h3 class="home-intro__subheading heading-3 ">What we do</h3>
           <p>
-            We provide the best experience for home and business owners as they transition to the savings of solar
-            energy.
-            We know you work hard for your money. We work hard to make sure you keep it.
+            We make going solar exciting and easy. Our unique approach is to show you all the options available, and help you decide which option is best for you. Everyone's circumstances are different; we help you navigate the world of solar energy to find the right solution.
+
           </p>
         </div>
-        <a href="#" class="btn btn--gold-border home-intro__btn"><span class="btn__link">About Us</span></a>
+        <a href="<?php echo site_url('/about'); ?>" class="btn btn--gold-border home-intro__btn"><span class="btn__link">About Us</span></a>
       </div>
 
 
@@ -50,16 +48,12 @@
       <div class="home-options__cover grid--full">
         <div class="home-options__container grid content--md-80">
           <h2 class="home-options__heading content--full heading-2 text-gold">Your solar options</h2>
-          <h3 class="home-options__subheading content--full text-light heading-3">We offer a plethora of solar home energy
-            solutions
-            tailored to your needs</h3>
+          <h3 class="home-options__subheading content--full text-light heading-3">Let’s find the best solar solution for you.</h3>
 
             <?php get_template_part('template-parts/finance-options'); ?>
 
-          <h3 class="home-options__subheading home-options__subheading--bottom heading-3 content--full text-light">Contact us
-            and we'll
-            help you find the solar option that's right for you</h3>
-          <a href="#" class="btn btn--gold btn--dark-bg home-options__btn"><span class="btn__link">Get a quote</span></a>
+          <h3 class="home-options__subheading home-options__subheading--bottom heading-3 content--full text-light">Contact us and we'll help you find the solar option that's right for you.</h3>
+          <a href="<?php echo site_url('/contact'); ?>" class="btn btn--gold btn--dark-bg home-options__btn"><span class="btn__link">Get a quote</span></a>
         </div>
       </div>
     </section>
@@ -97,7 +91,7 @@
       <div class="image-card content--span-3 content--lg-6 content--sm-full">
         <div class="image-card__content">
           <h3 class="image-card__heading heading-3 text-light">Easy</h3>
-          <p class="image-card__text">Your system is full insured, and and we are with you every step of the way.</p>
+          <p class="image-card__text">Your system is fully insured, and and we are with you every step of the way.</p>
         </div>
         <div class="image-card__background" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/card-4.jpg') ?>)"></div>
       </div>
@@ -105,7 +99,7 @@
       <div class="content--grid content--center-80 content--md-80">
         <h3 class="home-info__subheading heading-3">Learn more about our process and how we can help you save money
           while taking control of your energy needs</h3>
-        <a href="#" class="text-btn">Learn More <i class="las la-arrow-right"></i></a>
+        <a href="<?php echo site_url('/why-solar'); ?>" class="text-btn">Learn More <i class="las la-arrow-right"></i></a>
       </div>
 
     </section>
@@ -113,12 +107,12 @@
     <section class="benefits grid--full container--full">
 
       <div class="benefits__container container--central grid content--md-80">
-        <figure class="content--span-4">
+        <figure class="benefits__figure content--span-4 content--md-full">
           <img src="<?php echo get_theme_file_uri('/assets/images/img-md-2.jpg') ?>" alt="A hand gesturing towards thte sun">
         </figure>
         <div class="content--grid content--span-8 content--md-full">
           <h2 class="heading-2">The Benefits of Solar Energy</h2>
-          <p>Let the sun work for you and immediately save money while building equity in your home! We’ve been “renting” electricity much the same way since the time of Thomas Edison. As rates continue to climb year after year, there is no better time to finally take control and harness the power of the sun. Saving tens of thousands of dollars isn’t the only reason to go solar. Solar energy creates energy independence for the community, the state and America!</p>
+          <p>Let the sun work for you and immediately save money while building equity in your home! We’ve been “renting” electricity much the same way since the time of Thomas Edison. As rates continue to climb, there is no better time to finally take control and harness the power of the sun. Saving tens of thousands of dollars isn’t the only reason to go solar. Solar energy creates energy independence for the community, the state and America!</p>
         </div>
       </div>
     </section>

@@ -1,0 +1,48 @@
+@use "../abstracts/variables"as v;
+@use "../abstracts/mixins"as m;
+
+.finance-options {
+  &__list {
+    background-color: rgba(v.$color-grey-dark, .7);
+    display: grid;
+    row-gap: 2rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 2.4vw 0;
+  }
+
+  &__title {
+    font-size: 4rem;
+    line-height: 1;
+  }
+
+  &__double-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    @include m.respond(bp-lg) {
+      display: block;
+    }
+
+    & > small {
+      font-size: 1.5rem;
+      text-align: right;
+    }
+  }
+
+  &__item {
+    padding: 1.6rem 0;
+    font-size: 2rem;
+
+    &--accent {
+      padding: 0;
+      font-size: 2.5rem;
+      color: v.$color-secondary-dark;
+    }
+
+    &:not(:last-child) {
+      border-bottom: 2px solid v.$color-secondary-light;
+    }
+  }
+}

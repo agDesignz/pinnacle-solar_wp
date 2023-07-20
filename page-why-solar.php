@@ -8,7 +8,7 @@
     <div class="top-title__filter grid--full">
       <div class="about-title__content container--central">
         <h1 class="heading-1 text-light">Why Solar</h1>
-        <h3 class="heading-3 text-light">Learn about the benefits solar can bring you.</h3>
+        <h3 class="heading-3 text-light">Why buy electricity when you can produce your own?</h3>
       </div>
     </div>
 
@@ -38,7 +38,7 @@
 </section>
 
 <section class="why-perks container--full grid--full" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/bg-why-1.jpg'); ?>)">
-  <div class="why-perks__filter container--full grid--full u-pad-lg">
+  <div class="why-perks__filter container--full grid--full">
 
 
   <div class="why-perks__container container--central grid content--md-80">
@@ -84,7 +84,7 @@
       <h3 class="why-options__subheading heading-3 content--full u-center-text text-light">Contact us
         and we'll
         help you find the solar option that's right for you</h3>
-      <a href="#" class="btn btn--gold btn--dark-bg home-options__btn"><span class="btn__link">Get a quote</span></a>
+      <a href="<?php echo site_url('/contact'); ?>" class="btn btn--gold btn--dark-bg home-options__btn"><span class="btn__link">Get a quote</span></a>
 
     </div>
   </div>
