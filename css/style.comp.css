@@ -708,72 +708,48 @@ body {
 }
 @media only screen and (max-width: 56.25em) {
   .footer {
-    min-height: 100vh;
-    align-content: center;
+    padding: 10% 0;
   }
 }
 .footer__container {
   grid-column: center-start/center-end;
   color: #ffffff;
-  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  justify-items: center;
+  column-gap: 5rem;
+  align-content: baseline;
 }
 @media only screen and (max-width: 56.25em) {
   .footer__container {
-    grid-template-columns: repeat(2, 1fr);
-    justify-self: center;
+    grid-template-columns: 1fr;
   }
+}
+.footer__box {
+  display: grid;
+  row-gap: 1rem;
+  justify-content: center;
+  justify-items: center;
+}
+.footer__box--address i {
+  font-size: 2rem;
+  margin-right: 1rem;
 }
 .footer__logo-img {
-  max-height: 10rem;
+  max-width: 30rem;
 }
-@media only screen and (max-width: 37.5em) {
-  .footer__logo-img {
-    height: 15vw;
-  }
-}
-.footer__name {
-  font-size: 2.5rem;
-}
-.footer__address span {
-  display: block;
-}
-.footer__email, .footer__email:link, .footer__email:visited {
+.footer a, .footer a:link, .footer a:visited {
   color: #ffffff;
-  font-size: 1.5rem;
+  text-decoration: none;
+  font-size: 1.8rem;
   transition: all 0.2s;
   display: inline-block;
 }
-.footer__email:hover {
+.footer a:hover {
   color: #b1ada4;
-  transform: translateY(-2px);
-}
-.footer__phone, .footer__phone:link, .footer__phone:visited {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 1.6rem;
-  font-weight: 500;
-}
-.footer__cta {
-  grid-template-rows: min-content 1fr;
-  justify-items: end;
-}
-@media only screen and (max-width: 56.25em) {
-  .footer__cta {
-    grid-column: 1/-1;
-    justify-items: center;
-    row-gap: 4rem;
-  }
-}
-.footer__cta h3 {
-  text-align: right;
-}
-@media only screen and (max-width: 56.25em) {
-  .footer__cta h3 {
-    text-align: center;
-  }
 }
 .footer__btn {
-  align-self: end;
+  margin: 1rem 0;
 }
 @media only screen and (max-width: 56.25em) {
   .footer__btn {
@@ -1075,6 +1051,11 @@ body {
   column-gap: 6rem;
   row-gap: 6rem;
 }
+@media only screen and (max-width: 56.25em) {
+  .benefits__figure {
+    display: none;
+  }
+}
 
 .home-cta {
   background-size: cover;
@@ -1142,10 +1123,6 @@ body {
   .why-perks__box {
     grid-column: 1/-1;
   }
-}
-
-.why-protect {
-  padding-top: 0;
 }
 
 .why-options {
