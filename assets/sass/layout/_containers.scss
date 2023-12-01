@@ -18,6 +18,12 @@
       padding: 2rem;
     }
   }
+
+  &--full--padded-md {
+    @include m.respond(bp-sm) {
+      padding: 0;
+    }
+  }
   &--central {
     grid-column: v.$centralGrid;
   }

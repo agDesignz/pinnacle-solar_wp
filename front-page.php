@@ -46,7 +46,7 @@
 
     <section class="home-options grid--full" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/bg-front-2.jpg'); ?>)">
       <div class="home-options__cover grid--full">
-        <div class="home-options__container grid content--md-80">
+        <div class="home-options__container grid">
           <h2 class="home-options__heading content--full heading-2 text-gold">Your solar options</h2>
           <h3 class="home-options__subheading content--full text-light heading-3">Let’s find the best solar solution for you.</h3>
 
@@ -58,7 +58,7 @@
       </div>
     </section>
 
-    <section class="home-info container--full container--full--padded grid">
+    <section class="home-info container--full container--full--padded container--full--padded-md grid">
       <h2 class="home-info__heading heading-2 content--full">How it works</h2>
 
       <div class="image-card content--span-3 content--lg-6 content--sm-full">

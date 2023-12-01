@@ -9,6 +9,10 @@
 
   box-shadow: v.$shadow-light-w;
 
+  @include m.respond(bp-sm) {
+    border-radius: 0;
+  }
+
   &__background {
     width: 100%;
     height: 100%;

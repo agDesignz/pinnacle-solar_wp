@@ -28,7 +28,7 @@
 
     <?php
       wp_nav_menu([
-        'theme_lacation' => 'headerMenuLocation',
+        'theme_location' => 'headerMenuLocation',
         'menu_class' => 'nav',
         'container' => 'null'
       ]);

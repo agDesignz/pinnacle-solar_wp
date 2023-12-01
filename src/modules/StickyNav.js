@@ -2,11 +2,11 @@ class StickyNav{
   constructor() {
     this.headerTop = document.querySelector('.header__top');
     this.header = document.querySelector('.header');
-    this.headerHeight = header.getBoundingClientRect().height;
+    this.headerHeight = this.header.getBoundingClientRect().height;
     this.options = {
       root: null,
       threshold: 0,
-      rootMargin: `${headerHeight}px`
+      rootMargin: `${this.headerHeight}px`
     };
     this.navObserver = new IntersectionObserver(this.navStick.bind(this), this.options)
 
@@ -19,7 +19,7 @@ class StickyNav{
 
   navStick(entries) {
     const [entry] = entries;
-    if (!entry.insInterstcting) {
+    if (!entry.isIntersecting) {
       this.headerTop.classList.add('sticky');
     } else {
       this.headerTop.classList.remove('sticky');

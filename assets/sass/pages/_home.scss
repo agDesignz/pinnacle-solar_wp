@@ -85,6 +85,11 @@
   &__cover {
     background-image: linear-gradient(rgba(v.$color-primary-3, .85), rgba(v.$color-primary-3, .85));
     grid-column: v.$fullGrid;
+
+    @include m.respond(bp-md) {
+      background-image: none;
+      background-color: v.$color-grey-dark;
+    }
   }
   grid-column: v.$fullGrid;
 
@@ -93,8 +98,9 @@
     @include m.padVertLg;
 
     @include m.respond(bp-md) {
-      grid-column: v.$centralGrid;
+      grid-column: v.$fullGrid;
       @include m.stackEm;
+      text-align: center;
     }
   }
 
