@@ -21,7 +21,7 @@ Custom Wordpress Theme. Class naming follows the BEM convention and the folder s
 
 ## Deployment
 
-[https://pinnaclesolarenergy.com/](https://pinnaclesolarenergy.com/)
+[https://solar.alexgeer.dev/](https://solar.alexgeer.dev/)
 
 ## Contact Me:
 

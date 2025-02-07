@@ -1,4 +1,4 @@
-/******/ (function() { // webpackBootstrap
+/******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
@@ -6,9 +6,12 @@
 /*!*********************************!*\
   !*** ./src/modules/SmallNav.js ***!
   \*********************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 class SmallNav {
   constructor() {
     this.body = document.querySelector("body");
@@ -40,7 +43,7 @@ class SmallNav {
     if (e.target.closest('li').classList.contains('menu-item')) this.clearNav();
   }
 }
-/* harmony default export */ __webpack_exports__["default"] = (SmallNav);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SmallNav);
 
 /***/ }),
 
@@ -48,9 +51,12 @@ class SmallNav {
 /*!**********************************!*\
   !*** ./src/modules/StickyNav.js ***!
   \**********************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 class StickyNav {
   constructor() {
     this.headerTop = document.querySelector('.header__top');
@@ -76,7 +82,7 @@ class StickyNav {
     }
   }
 }
-/* harmony default export */ __webpack_exports__["default"] = (StickyNav);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (StickyNav);
 
 /***/ }),
 
@@ -84,7 +90,7 @@ class StickyNav {
 /*!*******************************!*\
   !*** ./assets/sass/main.scss ***!
   \*******************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
@@ -119,21 +125,38 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	}
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
-/******/ 	!function() {
+/******/ 	(() => {
 /******/ 		// define __esModule on exports
-/******/ 		__webpack_require__.r = function(exports) {
+/******/ 		__webpack_require__.r = (exports) => {
 /******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
 /******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
-/******/ 	}();
+/******/ 	})();
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
-!function() {
+// This entry needs to be wrapped in an IIFE because it needs to be isolated against other modules in the chunk.
+(() => {
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
@@ -146,7 +169,8 @@ __webpack_require__.r(__webpack_exports__);
 
 new _modules_StickyNav__WEBPACK_IMPORTED_MODULE_1__["default"]();
 new _modules_SmallNav__WEBPACK_IMPORTED_MODULE_2__["default"]();
-}();
+})();
+
 /******/ })()
 ;
 //# sourceMappingURL=index.js.map
