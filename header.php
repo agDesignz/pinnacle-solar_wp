@@ -29,7 +29,7 @@
     <?php
       wp_nav_menu([
         'theme_location' => 'headerMenuLocation',
-        'menu_class' => 'nav'
+        'container_class' => 'nav'
       ]);
     ?>
 
