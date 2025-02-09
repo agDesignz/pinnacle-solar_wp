@@ -1,4 +1,4 @@
-import "../assets/sass/main.scss";
+import "./scss/main.scss";
 
 import StickyNav from "./modules/StickyNav";
 import SmallNav from "./modules/SmallNav";
