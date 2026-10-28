@@ -1,0 +1,15 @@
+{
+  "name": "Pinnacle_Solar",
+  "version": "1.0.0",
+  "description": "Custom Theme for Pinnacle Solar",
+  "main": "index.js",
+  "scripts": {
+    "start": "wp-scripts start",
+    "build": "wp-scripts build"
+  },
+  "author": "Alex Geer",
+  "license": "ISC",
+  "devDependencies": {
+    "@wordpress/scripts": "^30.10.0"
+  }
+}

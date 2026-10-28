@@ -1,0 +1,78 @@
+@use "../abstracts/variables"as v;
+@use "../abstracts/mixins"as m;
+
+.description {
+
+  &__container {
+    @include m.padVertLg;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    @include m.respond(bp-md) {
+      background-image: none;
+    }
+  }
+
+  &__fig--2 {
+    @include m.respond(bp-md) {
+      grid-row: 4 / 5;
+    }
+  }
+}
+
+.services {
+  background-size: cover;
+  background-position: center;
+
+  &__filter {
+      @include m.padVertLg;
+    background-image: linear-gradient(rgba(v.$color-primary-3, .85), rgba(v.$color-primary-3, .85));
+  }
+
+  &__content {
+    row-gap: v.$row-gap-xl;
+  }
+
+  &__heading {
+    text-align: center;
+    color: v.$color-secondary-light;
+  }
+
+  &__item {
+    padding: 3rem 1.5rem;
+    // border: 1px solid v.$color-grey-medium;
+    border-radius: 0.8rem;
+    box-shadow: v.$shadow-light;
+    background-color: rgba(v.$color-grey-dark, .5);
+    color: v.$color-white;
+  }
+
+  &__rays-img {
+    height: 5rem;
+    justify-self: center;
+  }
+
+  &__subheading {
+    text-align: center;
+    color: v.$color-secondary-light;
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    text-align: justify;
+  }
+}
+
+.about-cta {
+  @include m.padVertLg;
+  text-align: center;
+
+  &__btn {
+    align-content: center;
+    justify-content: end;
+
+    @include m.respond(bp-md) {
+      justify-content: center;
+    }
+  }
+}

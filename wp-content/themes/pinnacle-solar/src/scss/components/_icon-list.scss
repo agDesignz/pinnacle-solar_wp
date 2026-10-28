@@ -1,0 +1,33 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+.icon-list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-auto-rows: min-content;
+  row-gap: v.$row-gap-md;
+  column-gap: v.$col-gap-sm;
+
+  &__heading {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid v.$color-primary-light;
+  }
+
+  &__star {
+    font-size: 5rem;
+    color: v.$color-secondary-light;
+    line-height: 1.2;
+  }
+
+  &__text {
+    text-align:justify;
+  }
+
+  &__btn {
+    grid-column: 2 / span 1;
+
+  }
+}
