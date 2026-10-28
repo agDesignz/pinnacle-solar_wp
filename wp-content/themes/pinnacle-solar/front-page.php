@@ -21,9 +21,13 @@
 
       <div class="home-intro__content content--grid content--span-6 content--md-full content--80">
         <div class="home-intro__block">
-          <h3 class="home-intro__subheading heading-3 ">Who we are</h2>
+          <h3 class="home-intro__subheading heading-3 ">
+            Save and be independent of corporate profits!
+          </h3>
             <p>
-              We are a solar consulting company located in the beautiful Berkshire Mountains of western Massachusetts. We are committed to helping home and business owners throughout New England make the transition to solar energy, combining the greatest savings with the highest quality installations.
+              You work hard for your money…
+              we help you keep more of it.
+              We’ll show you the tax and utility incentives that allow you to own your solar at no cost and save thousands of dollars!
             </p>
         </div>
         <div class="home-intro__block">
@@ -64,17 +68,24 @@
       <div class="image-card content--span-3 content--lg-6 content--sm-full">
         <div class="image-card__content">
           <h3 class="image-card__heading heading-3 text-light">Assess</h3>
-          <p class="image-card__text">The first step is to find what works best for you. An expert will evaluate your
-            site, answer all your questions and develop a plan to maximize your savings.</p>
+          <p class="image-card__text">The initial step involves discovering the optimal solution tailored to your needs. Our experts conduct a thorough assessment of your site, addressing all your inquiries, and noting all of your needs.</p>
         </div>
         <div class="image-card__background" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/card-1.jpg') ?>)"></div>
+      </div>
+
+
+      <div class="image-card content--span-3 content--lg-6 content--sm-full">
+        <div class="image-card__content">
+          <h3 class="image-card__heading heading-3 text-light">Plan</h3>
+          <p class="image-card__text">From panel placement to system configuration, every detail is thoughtfully considered to ensure optimal efficiency and savings, paving the way for a smooth and successful solar system  installation.</p>
+        </div>
+        <div class="image-card__background" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/card-4.jpg') ?>)"></div>
       </div>
 
       <div class="image-card content--span-3 content--lg-6 content--sm-full">
         <div class="image-card__content">
           <h3 class="image-card__heading heading-3 text-light">Install</h3>
-          <p class="image-card__text">Installations typically take one to two days. Our engineers plan ahead with you so
-            the exciting day goes smoothly and you’re up and saving in no time.</p>
+          <p class="image-card__text">Installations typically take one to two days. With our expertise and meticulous planning, you’ll be up and running with your new solar system in no time, enjoying the benefits of clean, renewable energy.</p>
         </div>
         <div class="image-card__background" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/card-2.jpg') ?>)"></div>
       </div>
@@ -86,14 +97,6 @@
             system is producing and the savings keep building up over the years.</p>
         </div>
         <div class="image-card__background" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/card-3.jpg') ?>)"></div>
-      </div>
-
-      <div class="image-card content--span-3 content--lg-6 content--sm-full">
-        <div class="image-card__content">
-          <h3 class="image-card__heading heading-3 text-light">Easy</h3>
-          <p class="image-card__text">Your system is fully insured, and and we are with you every step of the way.</p>
-        </div>
-        <div class="image-card__background" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/card-4.jpg') ?>)"></div>
       </div>
 
       <div class="content--grid content--center-80 content--md-80">
@@ -112,7 +115,7 @@
         </figure>
         <div class="content--grid content--span-8 content--md-full">
           <h2 class="heading-2">The Benefits of Solar Energy</h2>
-          <p>Let the sun work for you and immediately save money while building equity in your home! We’ve been “renting” electricity much the same way since the time of Thomas Edison. As rates continue to climb, there is no better time to finally take control and harness the power of the sun. Saving tens of thousands of dollars isn’t the only reason to go solar. Solar energy creates energy independence for the community, the state and America!</p>
+          <p>When it comes to electricity, you deserve to keep more of your hard-earned money. You deserve to see the truth regarding how to make use of the available incentives for going solar.</p>
         </div>
       </div>
     </section>
