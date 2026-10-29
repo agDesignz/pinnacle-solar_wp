@@ -9,7 +9,7 @@
 
 
         <div class="footer__box footer__box--address">
-          <a class="footer__phone" href="tel:+4132086208"><i class="las la-phone"></i>413-206-6208</a>
+          <a class="footer__phone" href="tel:+4132066208"><i class="las la-phone"></i>413-206-6208</a>
           <a href="mailto:info@pinnaclesolarenergy.com" class="footer__email"><i class="las la-at"></i>info@pinnaclesolarenergy.com</a>
           <a href="<?php echo site_url('/contact'); ?>" class="btn btn--white-border btn--dark-bg footer__btn"><span class="btn__link">Get a quote</span></a>
         </div>

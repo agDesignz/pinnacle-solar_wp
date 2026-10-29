@@ -28,7 +28,7 @@
         </div>
 
         <div class="content--span-6 content--md-full">
-          <?php contactForm('right', 'contact-form--dark'); ?>
+          <?php echo pcf_render_contact_form( 'right', 'contact-form--dark' ); ?>
         </div>
 
       </div>

@@ -22,15 +22,15 @@ add_action('wp_enqueue_scripts', 'pinnacle_files');
 
 
 // Send email via SMTP
-add_action( 'phpmailer_init', 'contact_form_mail' );
-function contact_form_mail( $phpmailer ) {
-    $phpmailer->isSMTP();
-    $phpmailer->Host = SMTP_HOST;
-    $phpmailer->SMTPAuth = SMTP_AUTH;
-    $phpmailer->Port = SMTP_PORT;
-    $phpmailer->Username = SMTP_USER;
-    $phpmailer->Password = SMTP_PASS;
-    $phpmailer->SMTPSecure = SMTP_SECURE;
-    $phpmailer->From = SMTP_FROM;
-    $phpmailer->FromName = SMTP_NAME;
-}
+// add_action( 'phpmailer_init', 'contact_form_mail' );
+// function contact_form_mail( $phpmailer ) {
+//     $phpmailer->isSMTP();
+//     $phpmailer->Host = SMTP_HOST;
+//     $phpmailer->SMTPAuth = SMTP_AUTH;
+//     $phpmailer->Port = SMTP_PORT;
+//     $phpmailer->Username = SMTP_USER;
+//     $phpmailer->Password = SMTP_PASS;
+//     $phpmailer->SMTPSecure = SMTP_SECURE;
+//     $phpmailer->From = SMTP_FROM;
+//     $phpmailer->FromName = SMTP_NAME;
+// }
